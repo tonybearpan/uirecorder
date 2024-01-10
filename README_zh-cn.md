@@ -2,7 +2,7 @@
 
 ---
 
-![logo.png](https://raw.github.com/alibaba/uirecorder/master/logo.png)
+![logo.png](https://gitee.com/tonybearpan/uirecorder113/blob/master/logo.png)
 
 [![NPM version](https://img.shields.io/npm/v/uirecorder.svg?style=flat-square)](https://www.npmjs.com/package/uirecorder)
 [![License](https://img.shields.io/npm/l/uirecorder.svg?style=flat-square)](https://www.npmjs.com/package/uirecorder)
@@ -40,13 +40,13 @@ UI Recorder 非常简单易用，零成本解决测试回归问题。
 
 # 软件截图
 
-![shot1](https://raw.github.com/alibaba/uirecorder/master/screenshot/shot1.png)
+![shot1](https://gitee.com/tonybearpan/uirecorder113/blob/master/screenshot/shot1.png)
 
-![shot2](https://raw.github.com/alibaba/uirecorder/master/screenshot/shot2.png)
+![shot2](https://gitee.com/tonybearpan/uirecorder113/blob/master/screenshot/shot2.png)
 
-![shot3](https://raw.github.com/alibaba/uirecorder/master/screenshot/shot3.png)
+![shot3](https://gitee.com/tonybearpan/uirecorder113/blob/master/screenshot/shot3.png)
 
-![shot4](https://raw.github.com/alibaba/uirecorder/master/screenshot/shot4.png)
+![shot4](https://gitee.com/tonybearpan/uirecorder113/blob/master/screenshot/shot4.png)
 
 # 视频演示
 
