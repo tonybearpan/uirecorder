@@ -34,10 +34,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:alibaba/uirecorder.git"
+    "url": "git@gitee.com:tonybearpan/uirecorder119.git"
   },
   "bugs": {
-    "url": "https://github.com/alibaba/uirecorder/issues"
+    "url": "https://gitee.com/tonybearpan/uirecorder119/issues"
   },
   "keywords": [
     "uirecorder",
