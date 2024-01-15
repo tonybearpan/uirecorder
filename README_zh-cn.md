@@ -70,7 +70,7 @@ UI Recorder 非常简单易用，零成本解决测试回归问题。
 
 3. 安装 UI Recorder
 
-    > `npm install uirecorder mocha -g`
+    > `npm install uirecorder119 mocha -g`
 
 ## PC录制
 

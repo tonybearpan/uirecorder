@@ -84,7 +84,7 @@ This project follows the git-contributor [spec](https://github.com/xudafeng/git-
 
 3. Install UI Recorder
 
-    > `npm install uirecorder mocha -g`
+    > `npm install uirecorder119 mocha -g`
 
 ## PC record
 
