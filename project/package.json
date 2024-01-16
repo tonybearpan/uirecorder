@@ -13,7 +13,7 @@
     "resemblejs-node": "1.0.0",
     "selenium-standalone": "6.x.x",
     "jquery": "3.x",
-    "uirecorder119": "^4.0.2-beta.14"
+    "uirecorder119": "^4.0.2-beta.15"
   },
   "devDependencies": {
   },
