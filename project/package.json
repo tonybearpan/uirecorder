@@ -13,7 +13,7 @@
     "resemblejs-node": "1.0.0",
     "selenium-standalone": "6.x.x",
     "jquery": "3.x",
-    "uirecorder119": "^4.0.2-beta.12"
+    "uirecorder119": "^4.0.2-beta.13"
   },
   "devDependencies": {
   },
@@ -23,7 +23,8 @@
     "test": "mocha \"!(node_modules)/**/*.spec.js\" --reporter mocha-allure-reporter --reporter-options reportJSONFilename=index,processAlwaysExitWithZero=true --bail",
     "singletest": "mocha --reporter mocha-allure-reporter --reporter-options reportJSONFilename=index,processAlwaysExitWithZero=true --bail",
     "paralleltest": "macaca-mocha-parallel-tests \"!(node_modules)/**/*.spec.js\" --reporter mocha-allure-reporter --reporter-options reportJSONFilename=index,processAlwaysExitWithZero=true --max-parallel 5 --bail",
-    "moduletest": "macaca-mocha-parallel-tests --reporter mocha-allure-reporter --reporter-options reportJSONFilename=index,processAlwaysExitWithZero=true --max-parallel 5 --bail"
+    "moduletest": "macaca-mocha-parallel-tests --reporter mocha-allure-reporter --reporter-options reportJSONFilename=index,processAlwaysExitWithZero=true --max-parallel 5 --bail",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "author": ""
 }
