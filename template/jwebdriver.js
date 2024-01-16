@@ -6,6 +6,7 @@ const should = chai.should();
 const JWebDriver = require('jwebdriver');
 chai.use(JWebDriver.chaiSupportChainPromise);
 const resemble = require('resemblejs-node');
+require('mocha-allure-reporter');
 resemble.outputSettings({
     errorType: 'flatDifferenceIntensity'
 });
@@ -148,7 +149,7 @@ function runThisSpec(){
                 let title = currentTest.title;
                 if(currentTest.state === 'failed' && /^(url|waitBody|switchWindow|switchFrame):/.test(title)){
                     self.skipAll = true;
-                }
+                }                
 
                 if ((config.screenshots && config.screenshots.captureAll && !/^(closeWindow):/.test(title)) || currentTest.state === 'failed') {
                     const casePath = path.dirname(caseName);
@@ -157,7 +158,9 @@ function runThisSpec(){
                     let driver = self.driver;
                     try{
                         // catch error when get alert msg
-                        await driver.getScreenshot(filepath + '.png');
+                        await driver.getScreenshot(filepath + '.png').then(function (base64) {
+                            allure.createAttachment(`${self.stepId}`, Buffer.from(base64, 'base64'));
+                        });
                         let url = await driver.url();
                         let html = await driver.source();
                         html = '<!--url: '+url+' -->\n' + html;
