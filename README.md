@@ -15,4 +15,4 @@ npm install uirecorder119 mocha -g
 其他使用与官方版本无异，请参考官方文档：
 
 ### 官方文档
-[English](README_en.md), [中文](README.md)
+[English](README_en.md), [中文](README_zh-cn.md)
