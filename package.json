@@ -1,6 +1,6 @@
 {
   "name": "uirecorder119",
-  "version": "4.0.2-beta.13",
+  "version": "4.0.2-beta.14",
   "description": "Tool for record ui test case",
   "main": "./index",
   "bin": {
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitee.com:tonybearpan/uirecorder113.git"
+    "url": "git@github.com:tonybearpan/uirecorder.git"
   },
   "bugs": {
     "url": "https://gitee.com/tonybearpan/uirecorder113/issues"
