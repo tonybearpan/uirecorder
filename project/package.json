@@ -11,7 +11,7 @@
     "macaca-mocha-parallel-tests": "2.x",
     "macaca-reporter": "^1.3.24",
     "resemblejs-node": "1.0.0",
-    "selenium-standalone": "6.x.x",
+    "selenium-standalone": "9.3.1",
     "jquery": "3.x",
     "uirecorder119": "^4.0.2-beta.15"
   },
