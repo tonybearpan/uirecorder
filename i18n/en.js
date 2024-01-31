@@ -8,6 +8,7 @@
     "file_created": "file created",
     "dir_created": "directory created",
     "json_parse_failed": "json parse failed!",
+    "fix_style_text": "fix style",
     "file_missed": "file search failed, please init first!",
     "input_spec_name": "Test spec file name:",
     "continue_to_record": "File existed, load and continue to record?",

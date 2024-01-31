@@ -1,5 +1,5 @@
 {
-   "manifest_version": 3,
+   "manifest_version": 2,
    "name": "UI Recorder",
    "description": "UI Recorder for chrome",
    "version": "1.0.0",
@@ -32,7 +32,8 @@
       "img/text.png",
       "img/alert.png",
       "img/back.png",
-      "img/jscode.png"
+      "img/jscode.png",
+      "img/fix.png"
    ],
    "background": {
       "scripts": [ "js/background.js" ]

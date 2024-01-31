@@ -69,6 +69,7 @@
         "button_jscode_text": "执行JS",
         "button_jump_text": "脚本跳转",
         "button_end_text": "结束录制",
+        "fix_style_text": "修复样式",
         "button_text_text": "输入文字",
         "button_alert_text": "Alert命令",
         "button_back_text": "后退按键",

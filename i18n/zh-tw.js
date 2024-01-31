@@ -14,6 +14,7 @@
     "mobile_app_path": "App路徑 (擴展名: apk, app, zip):",
     "mobile_platform": "App平台:",
     "open_checker_browser": "打開同步校驗瀏覽器？",
+    "fix_style_text": "修复样式",
     "browser_size": "瀏覽器大小 (格式：1024 x 768):",
     "dom_path_config": "Path擴展屬性配置,除id,name,class之外",
     "attr_black_list": "屬性值黑名單正則",
