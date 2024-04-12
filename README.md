@@ -10,7 +10,7 @@
 ## 安装方法
 
 ```shell
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com/
 npm install uirecorder119 mocha -g
 ```
 
