@@ -22,8 +22,9 @@ module.exports = function(){
         driver = self.driver;
         testVars = self.testVars;
     });
-
-{$testCodes}
+    describe('请填写用例说明', function() {
+        {$testCodes}
+    });
     function _(str){
         if(typeof str === 'string'){
             return str.replace(/\{\{(.+?)\}\}/g, function(all, key){
