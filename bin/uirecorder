@@ -44,6 +44,26 @@ program
     .option('--default', 'open checker browser and set 1024x768 by default')
     .option('--device [value]', 'set mobile device name');
 
+
+program.command('playwright <rawFile>')
+    .description('Generate a JavaScript Playwright script from a UIRecorder --raw JSON file')
+    .option('-o, --output <file>', 'output JavaScript file')
+    .option('--headless', 'generate script in headless mode')
+    .action(function(rawFile, options){
+        try {
+            var outputFile = UIRecorder.playwright.generateFile(rawFile, options.output, {
+                headless: !!options.headless
+            });
+            console.log('Playwright script generated: ' + outputFile);
+            console.log('Install browser binaries with: npx playwright install chromium');
+            console.log('Run the generated script with: node "' + outputFile + '"');
+        }
+        catch(error) {
+            console.error('Playwright script generation failed: ' + (error && error.message || error));
+            process.exitCode = 1;
+        }
+    });
+
 var cmd = null;
 
 program.command('init')
