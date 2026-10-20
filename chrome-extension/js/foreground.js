@@ -204,7 +204,7 @@
         else if(idValue && reAttrValueBlack.test(idValue) === false && checkUniqueSelector(rootNode, tempIdPath, isAllDom)){
             // id定位
             return tempIdPath;
-        } else if(testidValue && checkUniqueSelector(rootNode, tempTestPath)){
+        } else if(testidValue && checkUniqueSelector(rootNode, tempTestPath, isAllDom)){
             return tempTestPath;
         }else if(tagName === 'input'){
             // 表单项特殊校验
@@ -1691,7 +1691,8 @@
                                 var option = target.options[index];
                                 var value = option.getAttribute('value');
                                 var type;
-                                if(value){
+                                // An explicitly empty value is still a valid option value.
+                                if(option.hasAttribute('value')){
                                     type = 'value';
                                 }
                                 else{
