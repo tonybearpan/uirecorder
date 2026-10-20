@@ -30,7 +30,8 @@
     "git-contributor": "^1.0.8"
   },
   "scripts": {
-    "contributor": "git-contributor"
+    "contributor": "git-contributor",
+    "test:playwright-builder": "node test/playwright-builder.spec.js"
   },
   "repository": {
     "type": "git",
