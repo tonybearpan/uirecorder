@@ -242,6 +242,7 @@ function checkLostKey(windowId){
 }
 
 var isRunning = false;
+var pendingEndMessage = null;
 function execNextCommand(newCmdInfo){
     if(newCmdInfo){
         arrTasks.push(newCmdInfo);
@@ -255,6 +256,12 @@ function execNextCommand(newCmdInfo){
             isRunning = false;
             execNextCommand();
         }, 200);
+    }
+    else if(arrTasks.length === 0 && isRunning === false && pendingEndMessage){
+        // Send save/end only after every queued command has been sent over the WebSocket.
+        var endMessage = pendingEndMessage;
+        pendingEndMessage = null;
+        sendWsMessage(endMessage);
     }
 }
 
@@ -369,8 +376,13 @@ chrome.windows.onRemoved.addListener(function(){
 
 // end recorder
 function endRecorder(bSaveFile){
+    // Keep the first save request, and never let a later window-close event downgrade it.
+    if(pendingEndMessage === 'save'){
+        return;
+    }
+    pendingEndMessage = bSaveFile ? 'save' : (pendingEndMessage || 'end');
     setRecorderWork(false);
-    sendWsMessage(bSaveFile?'save':'end');
+    execNextCommand();
 }
 
 setRecorderWork(true);
